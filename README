@@ -3,12 +3,6 @@ ew - simple version control system
 
 ew is a (very) minimal version control system written (badly) in C.
 
-Why yet another VCS?
---------------------
-this has several reasons. 
-i) learning C by doing simple (actually not so simple) projects.
-ii) git is bloat.
-
 description
 -----------
 tracks changes in text files, shows diffs and allows reverting 
@@ -18,20 +12,15 @@ usernames.
 usage
 -----
 init     create new repository
-diff     show changes and save current version
+track    start tracking file
+untrack  stop tracking file
+find     find files in repository
+status   list tracked files
+diff     show changes
 revert   undo last changes  
 history  show all changes since init
 patch    create patch file
 save	 save state
-
-example
--------
-ew init            # initialize repository
-ew diff file       # show and save changes
-ew save file       # save state
-ew history         # view change history
-ew revert file     # undo last changes
-ew patch file.     # create patch file
 
 install
 -------

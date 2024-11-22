@@ -3,7 +3,7 @@ ifeq ($(PREFIX),)
 endif
 
 CC=cc
-CFLAGS=-l
+CFLAGS=-l -Wall
 
 ew: ew.c
 	${CC} ew.c -o ew
