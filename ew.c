@@ -89,16 +89,6 @@ typedef struct
 	time_t last_modified;
 } TrackedFile;
 
-typedef struct {
-    int old_start;
-    int old_lines;
-    int new_start;
-    int new_lines;
-    char change_type[MAX_LINES];
-    char changed_lines[MAX_LINES][MAX_LINE_LENGTH];
-    int change_count;
-} Hunk;
-
 /* function declarations */
 static void compute_changes(const char *old_file, const char *new_file, EnhancedVersionInfo *info);
 static void create_directory(const char *path);
